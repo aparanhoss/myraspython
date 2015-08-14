@@ -16,6 +16,9 @@ class Cmd:
 		for i in self.comple:
 			tmp+=format(i,'02x')
 		print(tmp)
+	def getSize(self):
+		return len(self.comple)+6
+		
 
 #c=Cmd(0xff,0x30,0x00,0x01)
 #c.printCmd()
